@@ -1,0 +1,321 @@
+
+    <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <!-- Preloader Start Here -->
+   <!-- <div id="preloader"></div>-->
+    <!-- Preloader End Here -->
+    <!-- ScrollUp Start Here -->
+    <a href="#wrapper" data-type="section-switch" class="scrollup">
+        <i class="fas fa-angle-double-up"></i>
+    </a>
+    <!-- ScrollUp End Here -->
+    <div id="wrapper" class="wrapper">
+        <!-- Header Area Start Here -->
+        <header class="header-one">
+            <div id="header-main-menu" class="header-main-menu header-sticky">
+                <div class="container">                    
+                    <div class="row">
+                        <div class="col-lg-8 col-md-3 col-sm-4 col-4 possition-static">
+                            <div class="site-logo-mobile">
+                                <a href="index.html" class="sticky-logo-light"><img src="img/skulvibesd.png" alt="Site Logo"></a>
+                                <a href="index.html" class="sticky-logo-dark"><img src="img/skulvibes-dark.png" alt="Site Logo"></a>
+                            </div>
+                            <nav class="site-nav">
+                                <ul id="site-menu" class="site-menu">
+                                    <li><a href="/blog">Blogs</a>
+                                        
+                                    </li>
+                                    <li>
+                                        <a href="/category">Category</a>
+                                    </li>
+                                    <li>
+                                        <a href="/signup">New Blogger</a>
+                                    </li>
+                                    
+                                 
+                                   
+                                   
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-lg-4 col-md-9 col-sm-8 col-8 d-flex align-items-center justify-content-end">
+                            <div class="nav-action-elements-layout1">
+                                <ul>
+                                   
+                                    <li>
+                                        <button type="button" class="login-btn" data-toggle="modal" data-target="#myModal">
+                                            <i class="flaticon-profile"></i>Login
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <a href="/signup" class="fill-btn"><i class="flaticon-plus-1"></i>BECOME A SCHOOL BLOGGER</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mob-menu-open toggle-menu">
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom d-none d-lg-block">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 d-none d-lg-block">
+                            <div class="nav-action-elements-layout2">
+                                <ul class="nav-social">
+                                    <li><img src="img/sch1.jpeg"  class="rounded-circle"  width="70" height="70" /></li>
+                                    <li><img src="img/sch2.jpeg"  class="rounded-circle"  width="70" height="70" /></li>
+                                    <li><img src="img/sch3.jpeg"  class="rounded-circle"  width="70" height="70" /></li>
+                                    <li><img src="img/sch4.png"  class="rounded-circle"  width="60" height="60" /></li>
+                                    <li><img src="img/sch5.png"  class="rounded-circle"  width="50" height="50" /></li>
+                                    <li><img src="img/sch6.png"  class="rounded-circle"  width="50" height="50" /></li>
+                                    
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 d-none d-lg-block">
+                            <div class="site-logo-desktop">
+                                <a href="index.html" class="main-logo"><img src="img/skulvibes-dark.png" alt="Site Logo"></a>
+                            </div>
+                        </div>
+                         <div class="nav-action-elements-layout2">
+                                <ul class="nav-social">
+                                    <li><img src="/img/sch1.jpeg"  class="rounded-circle"  width="70" height="70" /></li>
+                                    <li><img src="/img/sch2.jpeg"  class="rounded-circle"  width="70" height="70" /></li>
+                                    <li><img src="/img/sch3.jpeg"  class="rounded-circle"  width="70" height="70" /></li>
+                                    <li><img src="/img/sch4.png"  class="rounded-circle"  width="60" height="60" /></li>
+                                    <li><img src="/img/sch5.png"  class="rounded-circle"  width="50" height="50" /></li>
+                                    <li><img src="/img/sch6.png"  class="rounded-circle"  width="50" height="50" /></li>
+                                    
+                                    
+                                </ul>
+                            </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header Area End Here -->
+        <!-- Inne Page Banner Area Start Here -->
+        <section class="inner-page-banner bg-common" data-bg-image="img/figure/inner-page-banner1.jpg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="breadcrumbs-area">
+
+                            <h1>Skulvibing</h1>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Inne Page Banner Area End Here -->
+        <!-- Blog Grid Area Start Here -->
+        <section class="blog-grid-page-wrap padding-top-80 padding-bottom-50">
+            <div class="container">
+                <div class="row gutters-60">
+                    <div class="col-lg-8">
+                        <div class="row">
+                            <% data.forEach((post)=>{ %>
+                            <div class="col-sm-6 col-12">
+                                <div class="blog-box-layout1">
+                                    <div class="item-figure">
+                                        <a href="single-blog.html"><img src="<%=post.filepic%>" alt="Blog"></a>
+                                    </div>
+                                    <div class="item-content">
+                                        <ul class="entry-meta">
+                                            <li><a href="#"><i class="fas fa-clock"></i><%=post.createdAt.toDateString()%></a></li>
+                                            <li><a href="#"><i class="fas fa-user"></i>by <span><%=post.written_by%></span></a></li>
+                                            <li><a href="#"><i class="fa fa-building"></i>School <span><%=post.school_name%></span></a></li>
+                                        </ul>
+                                    <h3 class="item-title"><a href="single-blog.html"><span class="title"><%=post.title%></span> </a></h3>
+                                        <p><span class="description">
+                                            <%=post.body%>
+                                        </span></p>
+                                        <a href="/read-more/<%=post._id%>" class="item-btn">Continue Reading<i class="flaticon-next"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <%}) %>
+                            
+                            
+                           
+                          
+                          
+                           
+                            
+                        </div>
+                        <ul class="pagination-layout1">
+                            <li class="active">
+                                <a href="#">1</a>
+                            </li>
+                            <li>
+                                <a href="#">2</a>
+                            </li>
+                            <li>
+                                <a href="#">3</a>
+                            </li>
+                            <li>
+                                <a href="#">4</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 sidebar-widget-area sidebar-break-md">
+                   
+                        
+                        <div class="widget">
+                            <div class="section-heading heading-dark">
+                                <h3 class="item-heading">GET YOUR ADS HERE!!!!</h3>
+                            </div>
+                            <!--<div class="widget-ad">
+                                <a href="#"><img src="img/figure/figure6.jpg" alt="Ad" class="img-fluid"></a>
+                            </div>-->
+                             <div class="widget-featured-feed">
+                                <div class="rc-carousel nav-control-layout1" data-loop="true" data-items="3"
+                                    data-margin="5" data-autoplay="true" data-autoplay-timeout="5000" data-smart-speed="700"
+                                    data-dots="false" data-nav="false" data-nav-speed="false" data-r-x-small="1"
+                                    data-r-x-small-nav="true" data-r-x-small-dots="false" data-r-x-medium="1"
+                                    data-r-x-medium-nav="true" data-r-x-medium-dots="false" data-r-small="1"
+                                    data-r-small-nav="true" data-r-small-dots="false" data-r-medium="1"
+                                    data-r-medium-nav="true" data-r-medium-dots="false" data-r-large="1"
+                                    data-r-large-nav="true" data-r-large-dots="false" data-r-extra-large="1"
+                                    data-r-extra-large-nav="true" data-nav="false" data-r-extra-large-dots="false">
+
+                                    <%blogAds.forEach((ads)=>{%>
+                                    <div class="featured-box-layout1">
+                                        <div class="item-img">
+                                            <img src="<%=ads.adImage%>"  style="width: 400px; height: 400px;" alt="Brand" class="img-fluid">
+                                        </div>
+                                       
+                                    </div>
+                                    <%})%>
+                                    <div class="featured-box-layout1">
+                                        <div class="item-img">
+                                            <img src="img/product/product18.jpg" style="width: 400px; height: 400px;" alt="Brand" class="img-fluid">
+                                        </div>
+                                       
+                                    </div>
+                                    <div class="featured-box-layout1">
+                                        <div class="item-img">
+                                            <img src="img/product/product19.jpg" style="width: 400px; height: 400px;" alt="Brand" class="img-fluid">
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                            
+
+
+
+                        
+                        <div class="widget">
+                            <div class="widget-newsletter-subscribe">
+                                <h3>GET LATEST UPDATES</h3>
+                                <p>Newsletter Subscribe</p>
+                                <form class="newsletter-subscribe-form">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="your e-mail address" class="form-control" name="email"
+                                            data-error="E-mail field is required" required>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group mb-none">
+                                        <button type="submit" class="item-btn">SUBSCRIBE</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="widget">
+                            
+                    
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Blog Grid Area End Here -->
+        <!-- Footer Area Start Here -->
+        <footer class="ranna-bg-dark">
+            <div class="container">
+                <div class="footer-logo">
+                    <a href="index.html"><img src="img/skulvibesd.png" class="img-fluid" alt="footer-logo"></a>
+                </div>
+                <div class="footer-menu">
+                    <ul>
+                        <li><a href="#">FACEBOOK</a></li>
+                        <li><a href="#">TWITTER</a></li>
+                        <li><a href="#">INSTAGRAM</a></li>
+                        <li><a href="#">PINTEREST</a></li>
+                        <li><a href="#">GOOGLEPLUS</a></li>
+                        <li><a href="#">YOUTUBE</a></li>
+                    </ul>
+                </div>
+                <div class="copyright"><a target="_blank" href="#">Skulvibes</a></div>
+            </div>
+        </footer>
+        <!-- Footer Area End Here -->
+    </div>
+    <!-- Search Box Start Here -->
+    <div id="search" class="search-wrap">
+        <button type="button" class="close">×</button>
+        <form class="search-form">
+            <input type="search" value="" placeholder="Type here........" />
+            <button type="submit" class="search-btn"><i class="flaticon-search"></i></button>
+        </form>
+    </div>
+    <!-- Search Box End Here -->
+
+
+
+
+    <!-- Modal Start-->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="title-default-bold mb-none">Login</div>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form  action = '/login' method="POST" class="login-form">
+                        <input class="main-input-box" type="text" name="username" placeholder="User Name" />
+                        <input class="main-input-box" type="password" name="password" placeholder="Password" />
+                        <div class="inline-box mb-5 mt-4">
+                            <div class="checkbox checkbox-primary">
+                                <input id="modal-checkbox" type="checkbox">
+                                <label for="modal-checkbox">Remember Me</label>
+                            </div>
+                            <label class="lost-password"><a href="#">Lost your password?</a></label>
+                        </div>
+                       
+                        <div class="inline-box mb-5 mt-4">
+                            <button class="btn-fill "  type="submit" value="Login">Login</button>
+                            <a href="#" class="btn-register"><i class="fas fa-user"></i>Register Here!</a>
+                        </div>
+                    </form>
+                    <label>Login connect with your Social Network</label>
+                    <div class="login-box-social">
+                        <ul>
+                            <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#" class="google"><i class="fab fa-google-plus-g"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+  

@@ -1,0 +1,526 @@
+
+    <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <!-- Preloader Start Here -->
+   <!-- <div id="preloader"></div>-->
+    <!-- Preloader End Here -->
+    <!-- ScrollUp Start Here -->
+    <a href="#wrapper" data-type="section-switch" class="scrollup">
+        <i class="fas fa-angle-double-up"></i>
+    </a>
+    <!-- ScrollUp End Here -->
+    <div id="wrapper" class="wrapper">
+        <!-- Header Area Start Here -->
+       <header class="header-one">
+            <div id="header-main-menu" class="header-main-menu header-sticky">
+                <div class="container">                    
+                    <div class="row">
+                        <div class="col-lg-8 col-md-3 col-sm-4 col-4 possition-static">
+                            <div class="site-logo-mobile">
+                                <a href="index.html" class="sticky-logo-light"><img src="/img/skulvibesd.png" alt="Site Logo"></a>
+                                <a href="index.html" class="sticky-logo-dark"><img src="/img/skulvibes-dark.png" alt="Site Logo"></a>
+                            </div>
+                            <nav class="site-nav">
+                                <ul id="site-menu" class="site-menu">
+                                    <li><a href="/blog">Blogs</a>
+                                        
+                                    </li>
+                                    <li>
+                                        <a href="/category">Category</a>
+                                    </li>
+                                    <li>
+                                        <a href="/signup">New Blogger</a>
+                                    </li>
+                                    
+                                 
+                                   
+                                   
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-lg-4 col-md-9 col-sm-8 col-8 d-flex align-items-center justify-content-end">
+                            <div class="nav-action-elements-layout1">
+                                <ul>
+                                   
+                                    <li>
+                                        <button type="button" class="login-btn" data-toggle="modal" data-target="#myModal">
+                                            <i class="flaticon-profile"></i>Login
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <a href="/signup" class="fill-btn"><i class="flaticon-plus-1"></i>BECOME A SCHOOL BLOGGER</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mob-menu-open toggle-menu">
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom d-none d-lg-block">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 d-none d-lg-block">
+                            <div class="nav-action-elements-layout2">
+                                <ul class="nav-social">
+                                    <li><img src="/img/sch1.jpeg"  class="rounded-circle"  width="70" height="70" /></li>
+                                    <li><img src="/img/sch2.jpeg"  class="rounded-circle"  width="70" height="70" /></li>
+                                    <li><img src="/img/sch3.jpeg"  class="rounded-circle"  width="70" height="70" /></li>
+                                    <li><img src="/img/sch4.png"  class="rounded-circle"  width="60" height="60" /></li>
+                                    <li><img src="/img/sch5.png"  class="rounded-circle"  width="50" height="50" /></li>
+                                    <li><img src="/img/sch6.png"  class="rounded-circle"  width="50" height="50" /></li>
+                                    
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 d-none d-lg-block">
+                            <div class="site-logo-desktop">
+                                <a href="index.html" class="main-logo"><img src="/img/skulvibes-dark.png" alt="Site Logo"></a>
+                            </div>
+                        </div>
+                        <div class="nav-action-elements-layout2">
+                                <ul class="nav-social">
+                                    <li><img src="/img/sch1.jpeg"  class="rounded-circle"  width="70" height="70" /></li>
+                                    <li><img src="/img/sch2.jpeg"  class="rounded-circle"  width="70" height="70" /></li>
+                                    <li><img src="/img/sch3.jpeg"  class="rounded-circle"  width="70" height="70" /></li>
+                                    <li><img src="/img/sch4.png"  class="rounded-circle"  width="60" height="60" /></li>
+                                    <li><img src="/img/sch5.png"  class="rounded-circle"  width="50" height="50" /></li>
+                                    <li><img src="/img/sch6.png"  class="rounded-circle"  width="50" height="50" /></li>
+                                    
+                                    
+                                </ul>
+                            </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header Area End Here -->
+        <!-- Inne Page Banner Area Start Here -->
+        
+        <!-- Inne Page Banner Area End Here -->
+        <!-- Single Recipe With Sidebar Area Start Here -->
+        <section class="single-recipe-wrap-layout1 padding-top-74 padding-bottom-50">
+            <div class="container">
+                <div class="row gutters-60">
+                    <div class="col-lg-8">
+                        <div class="single-recipe-layout1">
+                           
+                            <h2 class="item-title"><%=data.title%></h2>
+                            <div class="row mb-4">
+                                <div class="col-xl-9 col-12">
+                                    <ul class="entry-meta">
+                                        <li class="single-meta"><a href="#"><i class="far fa-calendar-alt"></i><%=data.createdAt.toDateString()%></a></li>
+                                        <li class="single-meta"><a href="#"><i class="fas fa-user"></i>by <span><%=data.written_by%></span></a></li>
+                                       
+                                        <li class="single-meta"><a href="/like-post/<%=data._id%>" id="likeBtn" data-id="<%=data._id%>"><i class="fas fa-heart"></i><span id="likeCount"><%=data.likes%></span>
+                                                Likes</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-xl-3 col-12">
+                                    <ul class="action-item">
+                                        <li></li>
+                                        <li></li>
+                                        <li class="action-share-hover"><button><i class="fas fa-share-alt"></i></button>
+                                            <div class="action-share-wrap">
+                                                <a  title="facebook"><i class="fab fa-facebook-f"></i></a>
+                                                <a  title="twitter"><i class="fab fa-twitter"></i></a>
+                                                <a  title="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                                                <a  title="pinterest"><i class="fab fa-pinterest-p"></i></a>
+                                                <a  title="skype"><i class="fab fa-skype"></i></a>
+                                                <a  title="rss"><i class="fas fa-rss"></i></a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item-figure">
+                                <img src="<%=data.filepic%>" alt="Product">
+                            </div>
+                            <div class="item-feature">
+                                <ul>
+                                   
+                                   
+                                    
+                                    <li>
+                                        <div class="col-12">
+                                            <div class="media">
+                                                <div class="feature-icon">
+                                                    <i class="far fa-eye"></i>
+                                                </div>
+                                                <div class="media-body space-sm">
+                                                    <div class="feature-title">VIEWS</div>
+                                                    <div class="feature-sub-title"><%=data.views%></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="item-description"><%=data.body%></p>
+                            
+                       
+                          
+                            
+                             
+                    
+                            <div class="recipe-reviews scroll-container" id="blog-post" data-post-id="<%= data._id %>" >
+                                <div class="section-heading heading-dark">
+                                    <h2 class="item-heading">COMMENTS</h2>
+                                </div>
+                                <div class="avarage-rating-wrap">
+                                    
+                                    <div class="total-reviews">Total Reviews:<span class="review-number">(<%=comments%>)</span></div>
+                                </div>
+                                <ul id = "comment-list">
+                                    <li class="reviews-single-item">
+                                        <div class="media media-none--xs">
+                                            <img src="/img/blog/comment1.jpg" alt="Comment" class="media-img-auto">
+                                            <div class="media-body">
+                                                <h4 class="comment-title">Liza Zaman</h4>
+                                                <span class="post-date">September 27, 2018</span>
+                                                <p>Absolutely great recipe. I cooked it for my kids and they loved it, even 
+                                                        asked for more, can you believe it?</p>
+                                               
+                                                <!--<a href="#" class="item-btn">REPLY<i class="fas fa-long-arrow-alt-right"></i></a>-->
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="reviews-single-item">
+                                        <div class="media media-none--xs">
+                                            <img src="img/blog/comment2.jpg" alt="Comment" class="media-img-auto">
+                                            <div class="media-body">
+                                                <h4 class="comment-title">John Martin</h4>
+                                                <span class="post-date">September 12, 2018</span>
+                                                <p>Absolutely great recipe. I cooked it for my kids and they loved it, even 
+                                                        asked for more, can you believe it?</p>
+                                                <ul class="item-rating">
+                                                    <li class="single-item star-fill"><i class="fas fa-star"></i></li>
+                                                    <li class="single-item star-fill"><i class="fas fa-star"></i></li>
+                                                    <li class="single-item star-fill"><i class="fas fa-star"></i></li>
+                                                    <li class="single-item star-fill"><i class="fas fa-star"></i></li>
+                                                    <li class="single-item star-empty"><i class="fas fa-star"></i></li>
+                                                    <li class="single-item"><span>7<span> / 10</span></span> </li>
+                                                </ul>
+                                                <a href="#" class="item-btn">REPLY<i class="fas fa-long-arrow-alt-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="leave-review">
+                                <div class="section-heading heading-dark">
+                                    <h2 class="item-heading">LEAVE A COMMENT</h2>
+                                </div>
+                                
+                                <form action="/comments/<%=data._id%>" id="comment-form" data-id="<%=data._id%>" method="POST" class="leave-form-box">
+                                    <div class="row">
+                                        <div class="col-12 form-group">
+                                            <label>Comment :</label>
+                                            <textarea placeholder="" class="textarea form-control" id="commentText" name="commentText" rows="7"
+                                                cols="20" data-error="Message field is required" required></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                        <div class="col-lg-4 form-group">
+                                            <label>Name :</label>
+                                            <input type="text" placeholder="" class="form-control" id="author" name="author"
+                                                data-error="Name field is required" required>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                        
+                                       
+                                        <div class="col-12 form-group mb-0">
+                                            <button type="submit" class="item-btn">POST</button>
+                                        </div>
+                                    </div>
+                                    <div class="form-response"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 sidebar-widget-area sidebar-break-md">
+                        <div class="widget">
+                            <div class="section-heading heading-dark">
+                                <h3 class="item-heading">LATEST RECIPES</h3>
+                            </div>
+                            <div class="widget-latest">
+                                <ul class="block-list">
+                                    <li class="single-item">
+                                        <div class="item-img">
+                                            <a href="#"><img src="img/product/latest1.jpg" alt="Post"></a>
+                                            <div class="count-number">1</div>
+                                        </div>
+                                        <div class="item-content">
+                                            <div class="item-ctg">DESERT</div>
+                                            <h4 class="item-title"><a href="#">Salami Oven Roasted are
+                                                    Mozzarella Oelette</a></h4>
+                                            <div class="item-post-by"><a href="single-blog.html"><i class="fas fa-user"></i><span>by</span>
+                                                    John Martin</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="single-item">
+                                        <div class="item-img">
+                                            <a href="#"><img src="img/product/latest2.jpg" alt="Post"></a>
+                                            <div class="count-number">2</div>
+                                        </div>
+                                        <div class="item-content">
+                                            <div class="item-ctg">DESERT</div>
+                                            <h4 class="item-title"><a href="#">Salami Oven Roasted are
+                                                    Mozzarella Oelette</a></h4>
+                                            <div class="item-post-by"><a href="single-blog.html"><i class="fas fa-user"></i><span>by</span>
+                                                    John Martin</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="single-item">
+                                        <div class="item-img">
+                                            <a href="#"><img src="img/product/latest3.jpg" alt="Post"></a>
+                                            <div class="count-number">3</div>
+                                        </div>
+                                        <div class="item-content">
+                                            <div class="item-ctg">DESERT</div>
+                                            <h4 class="item-title"><a href="#">Salami Oven Roasted are
+                                                    Mozzarella Oelette</a></h4>
+                                            <div class="item-post-by"><a href="single-blog.html"><i class="fas fa-user"></i><span>by</span>
+                                                    John Martin</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="single-item">
+                                        <div class="item-img">
+                                            <a href="#"><img src="img/product/latest4.jpg" alt="Post"></a>
+                                            <div class="count-number">4</div>
+                                        </div>
+                                        <div class="item-content">
+                                            <div class="item-ctg">DESERT</div>
+                                            <h4 class="item-title"><a href="#">Salami Oven Roasted are
+                                                    Mozzarella Oelette</a></h4>
+                                            <div class="item-post-by"><a href="single-blog.html"><i class="fas fa-user"></i><span>by</span>
+                                                    John Martin</a></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                       
+                        
+                       
+                        <div class="widget">
+                            <div class="widget-newsletter-subscribe">
+                                <h3>GET LATEST UPDATES</h3>
+                                <p>Newsletter Subscribe</p>
+                                <form class="newsletter-subscribe-form">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="your e-mail address" class="form-control" name="email"
+                                            data-error="E-mail field is required" required>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group mb-none">
+                                        <button type="submit" class="item-btn">SUBSCRIBE</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                   
+                 
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Single Recipe With Sidebar Area End Here -->
+        <!-- Instagram Start Here -->
+       
+        <!-- Instagram End Here -->
+        <!-- Footer Area Start Here -->
+        <footer class="ranna-bg-dark">
+            <div class="container">
+                <div class="footer-logo">
+                    <a href="index.html"><img src="/img/skulvibesd.png" class="img-fluid" alt="footer-logo"></a>
+                </div>
+                <div class="footer-menu">
+                    <ul>
+                        <li><a href="#">FACEBOOK</a></li>
+                        <li><a href="#">TWITTER</a></li>
+                        <li><a href="#">INSTAGRAM</a></li>
+                        <li><a href="#">PINTEREST</a></li>
+                        <li><a href="#">GOOGLEPLUS</a></li>
+                        <li><a href="#">YOUTUBE</a></li>
+                    </ul>
+                </div>
+                <div class="copyright"><a target="_blank" href="https://www.templateshub.net">Skulvibes</a></div>
+            </div>
+        </footer>
+        <!-- Footer Area End Here -->
+    </div>
+    <!-- Search Box Start Here -->
+    <div id="search" class="search-wrap">
+        <button type="button" class="close">×</button>
+        <form class="search-form">
+            <input type="search" value="" placeholder="Type here........" />
+            <button type="submit" class="search-btn"><i class="flaticon-search"></i></button>
+        </form>
+    </div>
+    <!-- Search Box End Here -->
+    <!-- Modal Start-->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="title-default-bold mb-none">Login</div>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form class="login-form">
+                        <input class="main-input-box" type="text" placeholder="User Name" />
+                        <input class="main-input-box" type="password" placeholder="Password" />
+                        <div class="inline-box mb-5 mt-4">
+                            <div class="checkbox checkbox-primary">
+                                <input id="modal-checkbox" type="checkbox">
+                                <label for="modal-checkbox">Remember Me</label>
+                            </div>
+                            <label class="lost-password"><a href="#">Lost your password?</a></label>
+                        </div>
+                        <div class="inline-box mb-5 mt-4">
+                            <button class="btn-fill" type="submit" value="Login">Login</button>
+                            <a href="#" class="btn-register"><i class="fas fa-user"></i>Register Here!</a>
+                        </div>
+                    </form>
+                    <label>Login connect with your Social Network</label>
+                    <div class="login-box-social">
+                        <ul>
+                            <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#" class="google"><i class="fab fa-google-plus-g"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById('likeBtn').addEventListener('click', function(event) {
+    event.preventDefault();
+    const postId = this.getAttribute('data-id');
+
+    fetch(`/like-post/${postId}`, { method: 'POST' })
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById('likeCount').textContent = data.likes;
+        })
+        .catch(error => console.error('Error liking the post:', error));
+});
+
+document.getElementById('comment-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const postId = this.getAttribute('data-id'); // This should be dynamically assigned
+    const author = document.getElementById('author').value;
+    const commentText = document.getElementById('commentText').value;
+   
+
+    fetch(`/comments/${postId}`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ author, commentText })
+    })
+    .then(response => response.text())
+    .then(data => {
+        //alert('Comment added!');
+        loadComments();
+        const author = document.getElementById('author').value = ""
+    const commentText = document.getElementById('commentText').value = ""
+    })
+    .catch(error => console.error('Error:', error));
+});
+
+function loadComments() {
+    const postElement = document.getElementById('blog-post');
+    const postId = postElement.getAttribute('data-post-id'); // This should be dynamically assigned
+    fetch(`/comments/${postId}`)
+        .then(response => response.json())
+        .then(comments => {
+            const commentList = document.getElementById('comment-list'); // Ensure this is the ID of your <ul> or <div> that will contain the comments
+            commentList.innerHTML = ''; // Clear existing comments
+
+            comments.forEach(comment => {
+                const li = document.createElement('li');
+                li.className = 'reviews-single-item';
+
+                const mediaDiv = document.createElement('div');
+                mediaDiv.className = 'media media-none--xs';
+
+                const img = document.createElement('img');
+                img.src = '/img/blog/comment1.jpg'; // Default or dynamic image if you have one in comment
+                img.alt = 'Comment';
+                img.className = 'media-img-auto';
+
+                const mediaBody = document.createElement('div');
+                mediaBody.className = 'media-body';
+
+                const h4 = document.createElement('h4');
+                h4.className = 'comment-title';
+                h4.textContent = comment.author; // Assuming comment.author exists
+
+                const span = document.createElement('span');
+                span.className = 'post-date';
+                span.textContent = new Date(comment.date).toLocaleDateString(); // Format date as you prefer
+
+                const p = document.createElement('p');
+                p.textContent = comment.commentText; // Assuming comment.commentText exists
+
+                // Optionally add a reply link or button here
+                // const replyLink = document.createElement('a');
+                // replyLink.href = '#';
+                // replyLink.className = 'item-btn';
+                // replyLink.innerHTML = 'REPLY<i class="fas fa-long-arrow-alt-right"></i>';
+                // mediaBody.appendChild(replyLink);
+
+                mediaBody.appendChild(h4);
+                mediaBody.appendChild(span);
+                mediaBody.appendChild(p);
+
+                mediaDiv.appendChild(img);
+                mediaDiv.appendChild(mediaBody);
+
+                li.appendChild(mediaDiv);
+                commentList.appendChild(li);
+            });
+        })
+        .catch(error => console.error('Error:', error));
+}
+
+
+loadComments()
+
+       /* document.querySelectorAll('.action-share-wrap a').forEach(element => {
+            console.log("sample test")
+    const pageUrl = encodeURIComponent(document.location.href);
+    const pageTitle = encodeURIComponent(document.title); // Simplistic; might need actual content or metadata
+    const pageImage = encodeURIComponent('sample'); // This needs to be dynamic per post
+    const description = encodeURIComponent('DESCRIPTION_OF_THE_POST');
+
+    if (element.title.toLowerCase() === 'facebook') {
+        element.href = `https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`;
+    } else if (element.title.toLowerCase() === 'twitter') {
+        element.href = `https://twitter.com/intent/tweet?text=${pageTitle}&url=${pageUrl}`;
+    } else if (element.title.toLowerCase() === 'linkedin') {
+        element.href = `https://www.linkedin.com/sharing/share-offsite/?url=${pageUrl}`;
+    } else if (element.title.toLowerCase() === 'pinterest') {
+        element.href = `https://pinterest.com/pin/create/button/?url=${pageUrl}&media=${pageImage}&description=${description}`;
+    } else if (element.title.toLowerCase() === 'skype') {
+        element.href = `https://web.skype.com/share?url=${pageUrl}`;
+    }
+});*/
+
+    </script>
+   
